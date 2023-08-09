@@ -68,6 +68,7 @@ export default BlogIndex
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
+// @ts-expect-error
 export const Head = () => <Seo title="All posts" />
 
 export const pageQuery = graphql`
