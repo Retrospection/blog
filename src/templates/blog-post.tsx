@@ -63,6 +63,7 @@ const BlogPostTemplate = ({
 
 export const Head = ({ data: { markdownRemark: post } }) => {
   return (
+    // @ts-expect-error
     <Seo
       title={post.frontmatter.title}
       description={post.frontmatter.description || post.excerpt}

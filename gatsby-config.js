@@ -9,15 +9,15 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Retros' blog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Retros`,
+      summary: `who loves build intresting things and make good things happen.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `Retros blog.`,
+    siteUrl: `https://retros-dev.netlify.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `MEMORY_OwO`,
     },
   },
   plugins: [
@@ -110,7 +110,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
+        name: `Retros Blog`,
         short_name: `Gatsby`,
         start_url: `/`,
         background_color: `#ffffff`,
@@ -118,7 +118,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/avatar.jpg`, // This path is relative to the root of the site.
       },
     },
   ],
