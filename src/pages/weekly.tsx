@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Navigator from "../components/navigator";
 
-const BlogIndex = ({data, location}) => {
+const Weekly = ({data, location}) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
@@ -63,7 +63,7 @@ const BlogIndex = ({data, location}) => {
   )
 }
 
-export default BlogIndex
+export default Weekly
 
 /**
  * Head export to define metadata for the page
@@ -71,7 +71,7 @@ export default BlogIndex
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
 // @ts-expect-error
-export const Head = () => <Seo title="All posts"/>
+export const Head = () => <Seo title="Weekly"/>
 
 export const pageQuery = graphql`
   {
@@ -89,7 +89,7 @@ export const pageQuery = graphql`
       filter: {
         frontmatter: {
           type: {
-            eq: "post"
+            eq: "weekly"
           }
         }
       }
